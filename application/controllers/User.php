@@ -10,14 +10,18 @@ class User extends CI_Controller {
     
     
     public function index(){
-        
-    
         $this->load->view('include/header');
         $this->load->view('include/header_nav');
         $this->load->view('mode/index');
         $this->load->view('include/footer');
 
     }  
+    public function contact(){
+        $this->load->view('include/header');
+        $this->load->view('include/header_nav');
+        $this->load->view('mode/contact');
+        $this->load->view('include/footer');
+    }
     public function form(){
         $this->load->view('include/header');
         // $this->load->view('include/header_nav');
